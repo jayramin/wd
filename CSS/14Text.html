@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .txt-primary {
+            color: blue;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .text-end {
+            text-align: end;
+        }
+
+        .text-start {
+            text-align: start;
+        }
+
+        p[class*="text"] {
+            width: 200px;
+            box-shadow: 2px 2px 5px grey;
+        }
+
+        .text-direction {
+            /* direction: ltr; */
+            direction: rtl;
+            unicode-bidi: bidi-override;
+
+        }
+
+        img.a {
+            vertical-align: baseline;
+        }
+
+        img.b {
+            vertical-align: text-top;
+        }
+
+        img.c {
+            vertical-align: text-bottom;
+        }
+
+        img.d {
+            vertical-align: sub;
+        }
+
+        img.e {
+            vertical-align: super;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table class="">
+        <tbody>
+            <tr>
+                <th style="width:30%">Property</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><a href="#">direction</a></td>
+                <td>Specifies the text direction/writing direction</td>
+            </tr>
+            <tr>
+                <td><a href="#">text-align</a></td>
+                <td>Specifies the horizontal alignment of text</td>
+            </tr>
+            <tr>
+                <td><a href="#">text-align-last</a></td>
+                <td>Specifies how to align the last line of a text</td>
+            </tr>
+            <tr>
+                <td><a href="#">unicode-bidi</a></td>
+                <td>Used together with the <a href="#">direction</a> property to set or return whether the text should
+                    be overridden to support multiple languages in the same document</td>
+            </tr>
+            <tr>
+                <td><a href="#">vertical-align</a></td>
+                <td>Sets the vertical alignment of an element</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="txt-primary">color</p>
+    <h2>Text Alignment and Text Direction</h2>
+    <ul>
+        <li><code>text-align</code></li>
+        <li><code>text-align-last</code></li>
+        <li><code>direction</code></li>
+        <li><code>unicode-bidi</code></li>
+        <li><code>vertical-align</code></li>
+    </ul>
+    <p class="text-default">text-default Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus odit
+        ullam aut quis, maiores, neque eaque tempora ad, non consequatur iste! Facilis, rem minima quas ad et ratione.
+        Incidunt!</p>
+    <p class="text-left"> text-left Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus odit ullam
+        aut quis, maiores, neque eaque tempora ad, non consequatur iste! Facilis, rem minima quas ad et ratione.
+        Incidunt!</p>
+    <p class="text-start"> text-start Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus odit ullam
+        aut quis, maiores, neque eaque tempora ad, non consequatur iste! Facilis, rem minima quas ad et ratione.
+        Incidunt!</p>
+    <p class="text-end"> text-end Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus odit ullam aut
+        quis, maiores, neque eaque tempora ad, non consequatur iste! Facilis, rem minima quas ad et ratione. Incidunt!
+    </p>
+    <p class="text-right">text-right Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus odit ullam
+        aut quis, maiores, neque eaque tempora ad, non consequatur iste! Facilis, rem minima quas ad et ratione.
+        Incidunt!</p>
+    <p class="text-center">text-center Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus odit
+        ullam aut quis, maiores, neque eaque tempora ad, non consequatur iste! Facilis, rem minima quas ad et ratione.
+        Incidunt!</p>
+    <p class="text-justify">text-justify Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus odit
+        ullam aut quis, maiores, neque eaque tempora ad, non consequatur iste! Facilis, rem minima quas ad et ratione.
+        Incidunt!</p>
+    <p class="text-direction"> direction </p>
+
+    <h2>Vertical Alignment</h2>
+
+    <h2>vertical-align: baseline (default):</h2>
+    <p style="border: 1px solid #000;">An <img class="a" src="images/sqpurple.gif" width="9" height="9"> image with a
+        default alignment.</p>
+
+    <h2>vertical-align: text-top:</h2>
+    <p>An <img class="b" src="images/sqpurple.gif" width="9" height="9"> image with a text-top alignment.</p>
+
+    <h2>vertical-align: text-bottom:</h2>
+    <p>An <img class="c" src="images/sqpurple.gif" width="9" height="9"> image with a text-bottom alignment.</p>
+
+    <h2>vertical-align: sub:</h2>
+    <p>An <img class="d" src="images/sqpurple.gif" width="9" height="9"> image with a sub alignment.</p>
+
+    <h2>vertical-align: sup:</h2>
+    <p>An <img class="e" src="images/sqpurple.gif" width="9" height="9"> image with a super alignment.</p>
+
+    <h2>Text Decoration</h2>
+    <ul>
+        <li><code>text-decoration-line</code></li>
+        <li><code>text-decoration-color</code></li>
+        <li><code>text-decoration-style</code></li>
+        <li><code>text-decoration-thickness</code></li>
+        <li><code>text-decoration</code></li>
+    </ul>
+    <style>
+        p.ex3 {
+            /* text-decoration-line: underline;
+            text-decoration-color: red;
+            text-decoration-style: wavy;
+            text-decoration-thickness: 5px; */
+            text-decoration: underline red double 5px;
+
+        }
+    </style>
+    <p class="ex3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt provident magnam temporibus error,
+        aliquid quaerat illo debitis, quas pariatur officiis sapiente libero quis reprehenderit. Hic molestiae dolore
+        sunt et culpa!</p>
+
+    <h2>Text Transformation</h2>
+    <style>
+        p.uppercase {
+            text-transform: uppercase;
+        }
+
+        p.lowercase {
+            text-transform: lowercase;
+        }
+
+        p.capitalize {
+            text-transform: capitalize;
+        }
+    </style>
+
+    <p class="uppercase">This text is transformed to uppercase.</p>
+    <p class="lowercase">This text is transformed to lowercase.</p>
+    <p class="capitalize">This text is capitalized.</p>
+
+    <h2>Text Spacing</h2>
+    <ul>
+        <li><code >text-indent</code></li>
+        <li><code >letter-spacing</code></li>
+        <li><code >line-height</code></li>
+        <li><code >word-spacing</code></li>
+        <li><code >white-space</code></li>
+    </ul>
+    <style>
+        .indent{
+            text-indent: 50px;
+            letter-spacing: 5px;
+            word-spacing: 10px;
+            white-space: break-spaces;
+            line-height: 30px;
+            text-shadow: 2px 2px 2px rgb(20, 20, 59)
+        }
+    </style>
+    <p class="indent"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio saepe minima doloribus eius delectus possimus ea officia voluptatibus corrupti libero, eos unde quos esse dolorum. Quaerat deleniti nobis minus quibusdam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestiae neque eum et, quis similique quas corrupti, voluptatem sit totam debitis iste magnam. Sint distinctio cumque eaque doloribus laborum culpa.</p>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+
+        /* &lt;a&gt; elements with a title attribute */
+        a[title] {
+        color: purple;
+        }
+    
+        /* &lt;a&gt; elements with an href matching "https://example.org" */
+        a[href="https://example.org"]
+        {
+        color: green;
+        }
+    
+        /* &lt;a&gt; elements with an href containing "example" */
+        a[href*="example"] {
+        font-size: 2em;
+        }
+    
+        /* &lt;a&gt; elements with an href ending ".org" */
+        a[href$=".org"] {
+        font-style: italic;
+        }
+    
+        /* &lt;a&gt; elements whose class attribute contains the word "logo" */
+        a[class~="logo"] {
+        padding: 2px;
+        }
+    </pre>
+
+</body>
+
+</html>

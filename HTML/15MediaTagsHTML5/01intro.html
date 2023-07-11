@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>HTML 5 Media Tags</h2>
+    <ul>
+        <li><strong>&lt;audio&gt;</strong><strong>:</strong> It is an inline element that is used to embed sound files
+            into a web page.</li>
+        <li><strong>&lt;video&gt;</strong><strong>:&nbsp;</strong> It is used to embed video files into a web page.</li>
+        <li><strong>&lt;source&gt;</strong>: It is used to attach multimedia files like audio, video, and pictures.</li>
+        <li><strong>&lt;</strong><strong>embed</strong><strong>&gt;:</strong> It
+            is used for embedding external applications which are generally multimedia content like audio or video into
+            an HTML document.</li>
+        <li><strong>&lt;track&gt;</strong><strong>:
+                &nbsp;</strong>It specifies text tracks for media components audio and video.</li>
+    </ul>
+
+
+    <audio src="file_example_MP3_700KB.mp3"></audio>
+    <audio src="file_example_MP3_700KB.mp3" controls></audio>
+
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <video src="SampleVideo_1280x720_5mb.mp4" height="200px"></video>
+    <video src="SampleVideo_1280x720_5mb.mp4" height="200px" controls></video>
+    <video src="SampleVideo_1280x720_5mb.mp4" height="200px" controls autoplay></video>
+    <video src="SampleVideo_1280x720_5mb.mp4" height="200px" controls autoplay muted></video>
+    <video src="SampleVideo_1280x720_5mb.mp4" height="200px" controls autoplay muted loop></video>
+    <video src="SampleVideo_1280x720_5mb.mp4" height="200px" controls poster="_rrr_postponed.webp"></video>
+
+    <picture>
+        <source media="(min-width:650px)" srcset="desktop.png">
+        <img src="191.png" alt="Flowers" style="width:auto;">
+    </picture>
+
+    <img src="desktop.png" alt="">
+
+    <embed src="HTML5-Cheat-Sheet.pdf" type="">
+
+
+    <video controls="" class="trackSupported">
+        <source src="https://www.html5rocks.com/en/tutorials/track/basics/treeOfLife/video/developerStories-en.webm"
+            type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+        <track
+            src="https://www.html5rocks.com/en/tutorials/track/basics/treeOfLife/tracks/developerStories-subtitles-en.vtt"
+            label="English subtitles" kind="subtitles" srclang="en" default="">
+        </track>
+    </video>
+
+
+    <video id="video" preload="metadata" controls>
+        <source src="http://iandevlin.github.io/mdn/video-player-with-captions/video/sintel-short.mp4" type="video/mp4">
+        <source src="http://iandevlin.github.io/mdn/video-player-with-captions/video/sintel-short.webm" type="video/webm">
+        <track label="English" kind="subtitles" srclang="en" src="http://iandevlin.github.io/mdn/video-player-with-captions/subtitles/vtt/sintel-en.vtt" default="">
+        <track label="Deutsch" kind="subtitles" srclang="de" src="http://iandevlin.github.io/mdn/video-player-with-captions/subtitles/vtt/sintel-de.vtt">
+        <track label="Español" kind="subtitles" srclang="es" src="http://iandevlin.github.io/mdn/video-player-with-captions/subtitles/vtt/sintel-es.vtt">
+    </video>
+</body>
+
+</html>

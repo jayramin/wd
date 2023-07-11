@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.one {
+            border-style: solid;
+            border-color: red;
+        }
+
+        p.two {
+            border-style: solid;
+            border-color: green;
+        }
+
+        p.three {
+            border-style: dotted;
+            border-color: blue;
+        }
+
+        .sides {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dashed;
+  border-left-style: solid;
+  padding: 20px;
+}
+p.normal {
+  border: 2px solid red;
+  padding: 5px;
+}
+
+p.round1 {
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+p.round2 {
+  border: 2px solid red;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+p.round3 {
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 5px;
+}
+.leaf{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 0 200px 0 200px;
+    background: green;
+}
+.leaf-r{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius:200px 0 200px 0 ;
+    background: green;
+}
+.border-radi{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius:50px 0 200px 0 ;
+    background: green;
+}
+.circle{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    background: purple;
+}
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><code>dotted</code> - Defines a dotted border</li>
+        <li><code>dashed</code> - Defines a dashed border</li>
+        <li><code>solid</code> - Defines a solid border</li>
+        <li><code>double</code> - Defines a double border</li>
+        <li><code>groove</code> - Defines a 3D grooved border. The effect depends on the
+            border-color value</li>
+        <li><code>ridge</code> - Defines a 3D ridged border. The effect depends on the border-color
+            value</li>
+        <li><code>inset</code> - Defines a 3D inset border. The effect depends on the border-color
+            value</li>
+        <li><code>outset</code> - Defines a 3D outset border. The effect depends on the border-color
+            value</li>
+        <li><code>none</code> - Defines no border</li>
+        <li><code>hidden</code> - Defines a hidden border</li>
+    </ul>
+    <div>
+        <p style="border: dotted 10px;padding:2px 4px;">A dotted border.</p>
+        <p style="border: dashed 10px;padding:2px 4px;">A dashed border.</p>
+        <p style="border: solid 10px;padding:2px 4px;">A solid border.</p>
+        <p style="border: double 10px;padding:2px 4px;">A double border.</p>
+        <p style="border: groove 10px;padding:2px 4px;">A groove border. The effect depends on the border-color value.
+        </p>
+        <p style="border: ridge 10px;padding:2px 4px;">A ridge border. The effect depends on the border-color value.</p>
+        <p style="border: inset 10px;padding:2px 4px;">An inset border. The effect depends on the border-color value.
+        </p>
+        <p style="border: outset 10px;padding:2px 4px;">An outset border. The effect depends on the border-color value.
+        </p>
+        <p style="border: none 10px;padding:2px 4px;">No border.</p>
+        <p style="border: hidden 10px;padding:2px 4px;">A hidden border.</p>
+        <p style="border: dotted dashed solid double;padding:2px 4px;">A mixed border.</p>
+    </div>
+
+    
+<p class="one">A solid red border</p>
+<p class="two">A solid green border</p>
+<p class="three">A dotted blue border</p>
+<p class="sides">A dotted Sides</p>
+
+<h2>CSS Border - Shorthand Property </h2>
+<p>Like you saw in the previous page, there are many properties to consider when dealing with borders.</p>
+<p>To shorten the code, it is also possible to specify all the individual border properties in one property.</p>
+<p>The border property is a shorthand property for the following individual border properties: </p>
+<ul>
+    <li> border-width</li>
+    <li> border-style (required)</li>
+    <li> border-color</li>
+</ul>
+<h2>The border-radius Property</h2>
+<p>This property is used to add rounded borders to an element:</p>
+
+<p class="normal">Normal border</p>
+<p class="round1">Round border</p>
+<p class="round2">Rounder border</p>
+<p class="round3">Roundest border</p>
+<div class="leaf"></div>
+<div class="circle"></div>
+<div class="leaf-r"></div>
+<div class="border-radi"></div>
+</body>
+
+</html>

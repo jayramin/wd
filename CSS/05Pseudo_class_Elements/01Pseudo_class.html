@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .example-active:active {
+            color: blueviolet;
+        }
+
+        .inp:checked {
+            filter: brightness(80%) hue-rotate(170deg) saturate(70%) contrast(300%);
+        }
+
+        .btn:disabled {
+            border: 1px solid orangered;
+        }
+
+        .example-empty:empty {
+            border: 1px solid red;
+        }
+
+        p:first-child {
+            background-color: yellow;
+        }
+
+        .focus:focus {
+            background-color: teal;
+            color: white;
+        }
+
+        .btn-hover:hover {
+            font-size: 20px;
+        }
+
+        input:invalid {
+            background: hsla(0, 90%, 70%, 1);
+        }
+
+        input:valid {
+            background: hsla(100, 90%, 70%, 1);
+        }
+
+        a:link {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="ws-table-all notranslate" border="1">
+        <tbody>
+            <tr>
+                <th style="width:20%">Selector</th>
+                <th style="width:20%">Example</th>
+                <th>Example description</th>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_active.asp">:active</a></td>
+                <td class="notranslate">a:active</td>
+                <td>Selects the active link, click and hold will diff color <a class="example-active" href="#">Example
+                        of active</a></td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_checked.asp">:checked</a></td>
+                <td class="notranslate">input:checked</td>
+                <td>Selects every checked &lt;input&gt; element<input type="checkbox" name="" id=""> <input
+                        type="checkbox" class="inp" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_disabled.asp">:disabled</a></td>
+                <td class="notranslate">input:disabled</td>
+                <td>Selects every disabled &lt;input&gt; element <button class="btn" disabled>Click</button></td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_empty.asp">:empty</a></td>
+                <td class="notranslate">p:empty</td>
+                <td>Selects every &lt;p&gt; element that has no children <input type="text" class="example-empty"
+                        name="" id=""> </td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_enabled.asp">:enabled</a></td>
+                <td class="notranslate">input:enabled</td>
+                <td>Selects every enabled &lt;input&gt; element</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_firstchild.asp">:first-child</a></td>
+                <td class="notranslate">p:first-child</td>
+                <td>Selects every &lt;p&gt; elements that is the first child of its parent <p>
+                        <span>Data</span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga facilis minima, neque
+                        laborum odit quis, ut laboriosam, quam officiis quos temporibus nobis quae itaque alias vitae
+                        iure. Cupiditate, doloremque.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_first-of-type.asp">:first-of-type</a></td>
+                <td class="notranslate">p:first-of-type</td>
+                <td>Selects every &lt;p&gt; element that is the first &lt;p&gt; element of its parent</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_focus.asp">:focus</a></td>
+                <td class="notranslate">input:focus</td>
+                <td>Selects the &lt;input&gt; element that has focus <input type="text" class="focus" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_hover.asp">:hover</a></td>
+                <td class="notranslate">a:hover</td>
+                <td>Selects links on mouse over <button class="btn-hover">Click</button></td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_in-range.asp">:in-range</a></td>
+                <td class="notranslate">input:in-range</td>
+                <td>Selects &lt;input&gt; elements with a value within a specified range</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_invalid.asp">:invalid</a></td>
+                <td class="notranslate">input:invalid</td>
+                <td>Selects all &lt;input&gt; elements with an invalid value <input type="email" name="" id=""> </td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_lang.asp">:lang(<i>language</i>)</a></td>
+                <td class="notranslate">p:lang(it)</td>
+                <td>Selects every &lt;p&gt; element with a lang attribute value starting with "it"</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_last-child.asp">:last-child</a></td>
+                <td class="notranslate">p:last-child</td>
+                <td>Selects every &lt;p&gt; elements that is the last child of its parent</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_last-of-type.asp">:last-of-type</a></td>
+                <td class="notranslate">p:last-of-type</td>
+                <td>Selects every &lt;p&gt; element that is the last &lt;p&gt; element of its parent</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_link.asp">:link</a></td>
+                <td class="notranslate">a:link</td>
+                <td>Selects all unvisited links</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_not.asp">:not(selector)</a></td>
+                <td class="notranslate">:not(p)</td>
+                <td>Selects every element that is not a &lt;p&gt; element</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_nth-child.asp">:nth-child(n)</a></td>
+                <td class="notranslate">p:nth-child(2)</td>
+                <td>Selects every &lt;p&gt; element that is the second child of its parent
+                    <style>
+                        /* .module:nth-child(4n) { */
+                        /* .module:nth-child(even) { */
+                        /* .module:nth-child(odd) { */
+                        .module:nth-child(2n+1) {
+                            background-color: grey;
+                        }
+                    </style>
+
+                    <section class="grid">
+                        <article class="module">One</article>
+                        <article class="module">Two</article>
+                        <article class="module">Three</article>
+                        <article class="module">Four</article>
+                        <article class="module">Five</article>
+                    </section>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_nth-last-child.asp">:nth-last-child(n)</a></td>
+                <td class="notranslate">p:nth-last-child(2)</td>
+                <td>Selects every &lt;p&gt; element that is the second child of its parent, counting from the last child
+                </td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_nth-last-of-type.asp">:nth-last-of-type(n)</a></td>
+                <td class="notranslate">p:nth-last-of-type(2)</td>
+                <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent, counting from
+                    the last child</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_nth-of-type.asp">:nth-of-type(n)</a></td>
+                <td class="notranslate">p:nth-of-type(2)</td>
+                <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_only-of-type.asp">:only-of-type</a></td>
+                <td class="notranslate">p:only-of-type</td>
+                <td>Selects every &lt;p&gt; element that is the only &lt;p&gt; element of its parent</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_only-child.asp">:only-child</a></td>
+                <td class="notranslate">p:only-child</td>
+                <td>Selects every &lt;p&gt; element that is the only child of its parent</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_optional.asp">:optional</a></td>
+                <td class="notranslate">input:optional</td>
+                <td>Selects &lt;input&gt; elements with no "required" attribute</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_out-of-range.asp">:out-of-range</a></td>
+                <td class="notranslate">input:out-of-range</td>
+                <td>Selects &lt;input&gt; elements with a value outside a specified range</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_read-only.asp">:read-only</a></td>
+                <td class="notranslate">input:read-only</td>
+                <td>Selects &lt;input&gt; elements with a "readonly" attribute specified</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_read-write.asp">:read-write</a></td>
+                <td class="notranslate">input:read-write</td>
+                <td>Selects &lt;input&gt; elements with no "readonly" attribute</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_required.asp">:required</a></td>
+                <td class="notranslate">input:required</td>
+                <td>Selects &lt;input&gt; elements with a "required" attribute specified</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_root.asp">:root</a></td>
+                <td class="notranslate">root</td>
+                <td>Selects the document's root element</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_target.asp">:target</a></td>
+                <td class="notranslate">#news:target</td>
+                <td>Selects the current active #news element (clicked on a URL containing that anchor name)</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_valid.asp">:valid</a></td>
+                <td class="notranslate">input:valid</td>
+                <td>Selects all &lt;input&gt; elements with a valid value</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_visited.asp">:visited</a></td>
+                <td class="notranslate">a:visited</td>
+                <td>Selects all visited links</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      border: 1px solid;
+    }
+    .flex{ display: flex; }
+    .flex-direction-column{ flex-direction: column; }
+    .flex-direction-column-reverse{ flex-direction: column-reverse; }
+    .flex-direction-row{ flex-direction: row; }
+    .flex-direction-row-reverse{ flex-direction: row-reverse; }
+    .col-25{
+      width: 24.8%;
+    }
+    .wrap{
+      flex-wrap: wrap;
+    }
+    .wrap-reverse{
+      flex-wrap: wrap-reverse;
+    }
+    .flex-flow-column{ flex-flow: column; }
+    .flex-flow-column-reverse{ flex-flow: column-reverse; }
+    .flex-flow-row{ flex-flow: row; }
+    .flex-flow-row-reverse{ flex-flow: row-reverse; }
+    .order-1{
+      order: 1;
+    }
+    .col-row-gap{
+      row-gap: 20px;
+      column-gap: 100px;
+      flex-wrap: wrap;
+    }
+    #main div:nth-of-type(1) {flex-grow: 1;}
+    #main div:nth-of-type(2) {flex-grow: 3;}
+    #main div:nth-of-type(3) {flex-grow: 1;}
+    #main div:nth-of-type(4) {flex-grow: 1;}
+    #main div:nth-of-type(5) {flex-grow: 1;}
+    .bg-clr:nth-of-type(even) {background-color: teal;}
+    .bg-clr:nth-of-type(odd) {background-color: brown;}
+    #hover-effect>div{
+      transition: all 2s;
+    }
+    #hover-effect>div:hover {flex-grow: 2;}
+    .flex-shrink {
+      width: 500px;
+    }
+    .flex-shrink div{
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 100px;
+      transition: all 2s;
+    }
+    .flex-shrink div:hover{
+      flex-shrink: 3;
+    }
+  </style>
+</head>
+
+<body>
+  <table class="ws-table-all notranslate">
+    <tbody>
+      <tr>
+        <th style="width:20%">Value</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+      </tr>
+      <tr>
+        <td><em>flex-grow</em></td>
+        <td>A number specifying how much the item will grow relative to the rest of the flexible items</td>
+      </tr>
+      <tr>
+        <td><em>flex-shrink</em></td>
+        <td>A number specifying how much the item will shrink relative to the rest of the flexible items</td>
+      </tr>
+      <tr>
+        <td><em>flex-basis</em></td>
+        <td>The length of the item. Legal values: "auto", "inherit", or a number followed by "%", "px", "em" or any
+          other length unit</td>
+      </tr>
+      <tr>
+        <td>auto</td>
+        <td>Same as 1 1 auto.</td>
+      </tr>
+      <tr>
+        <td>initial</td>
+        <td>Same as 0 1 auto.</td>
+      </tr>
+      <tr>
+        <td>none</td>
+        <td>Same as 0 0 auto.</td>
+      </tr>
+      <tr>
+        <td>inherit</td>
+        <td>Inherits this property from its parent element.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Display Flex Properties</h2>
+  <dl>
+    <dt>Ordering & Orientation</dt>
+    <dd>
+      <ul>
+        <li> flex-direction</li>
+        <li> flex-wrap</li>
+        <li> flex-flow</li>
+        <li> order</li>
+      </ul>
+    </dd>
+    <dt>Alignment</dt>
+    <dd>
+      <ul>
+        <li>justify-content</li>
+        <li>align-items, align-self</li>
+        <li>align-content</li>
+      </ul>
+    </dd>
+    <dt>Flexibility</dt>
+    <dd>
+      <ul>
+        <LI> flex-grow</LI>
+        <LI> flex-shrink</LI>
+        <LI> flex-basis</LI>
+        <LI> flex</LI>
+      </ul>
+    </dd>
+  </dl>
+
+  <h2>flex-direction</h2>
+  <h3>flex-direction-column</h3>
+  <div class="flex flex-direction-column"> <div class="col">Col1</div> <div class="col">Col2</div> <div class="col">Col3</div></div>
+  <h3>flex-direction-column-reverse</h3>
+  <div class="flex flex-direction-column-reverse"> <div class="col">Col1</div> <div class="col">Col2</div> <div class="col">Col3</div></div>
+  <h3>flex-direction-row</h3>
+  <div class="flex flex-direction-row"> <div class="col">Col1</div> <div class="col">Col2</div> <div class="col">Col3</div></div>
+  <h3>flex-direction-row-reverse</h3>
+  <div class="flex flex-direction-row-reverse"> <div class="col">Col1</div> <div class="col">Col2</div> <div class="col">Col3</div></div>
+
+  <h2>Flex-wrap</h2>
+  <p>Without Wrap col width 25%</p>
+  <div class="flex">
+    <div class="col-25">col-25</div>
+    <div class="col-25">col-25</div>
+    <div class="col-25">col-25</div>
+    <div class="col-25">col-25</div>
+    <div class="col-25">col-25</div>
+  </div>
+  <p>With Wrap col width 25%</p>
+  <div class="flex wrap">
+    <div class="col-25">col-25-1</div>
+    <div class="col-25">col-25-2</div>
+    <div class="col-25">col-25-3</div>
+    <div class="col-25">col-25-4</div>
+    <div class="col-25">col-25-5</div>
+    <div class="col-25">col-25-6</div>
+    <div class="col-25">col-25-7</div>
+    <div class="col-25">col-25-8</div>
+    <div class="col-25">col-25-9</div>
+    <div class="col-25">col-25-10</div>
+  </div>
+  <p>wrap-reverse</p>
+  <div class="flex wrap-reverse">
+    <div class="col-25">col-25-1</div>
+    <div class="col-25">col-25-2</div>
+    <div class="col-25">col-25-3</div>
+    <div class="col-25">col-25-4</div>
+    <div class="col-25">col-25-5</div>
+    <div class="col-25">col-25-6</div>
+    <div class="col-25">col-25-7</div>
+    <div class="col-25">col-25-8</div>
+    <div class="col-25">col-25-9</div>
+    <div class="col-25">col-25-10</div>
+  </div>
+  <h2>flex-flow  </h2>
+  <h4>flex-flow-column</h4>
+  <div class="flex flex-flow-column"> <div class="col">Col1</div> <div class="col">Col2</div> <div class="col">Col3</div></div>
+  <h4>flex-flow-column-reverse</h4>
+  <div class="flex flex-flow-column-reverse"> <div class="col">Col1</div> <div class="col">Col2</div> <div class="col">Col3</div></div>
+  <h4>flex-flow-row</h4>
+  <div class="flex flex-flow-row"> <div class="col">Col1</div> <div class="col">Col2</div> <div class="col">Col3</div></div>
+  <h4>flex-flow-row-reverse</h4>
+  <div class="flex flex-flow-row-reverse"> <div class="col">Col1</div> <div class="col">Col2</div> <div class="col">Col3</div></div>
+  
+  <h2>Order</h2>
+  <div class="flex "> <div class="col ">Col1</div> <div class="col order-1">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div></div>
+  
+  <h2>flex column row gap</h2>
+  <div class="flex col-row-gap">
+    <div class="col-25 ">Col1</div> <div class="col-25">Col2</div> <div class="col-25">Col3</div> <div class="col-25">Col4</div>
+    <div class="col-25 ">Col5</div> <div class="col-25">Col6</div> <div class="col-25">Col7</div> <div class="col-25">Col8</div>
+  </div>
+  <h2>flex grow</h2>
+  <p>The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container.</p>
+  <p> <b>Note:</b>  If the element is not a flexible item, the flex-grow property has no effect.</p>
+  <div id="main" class="flex flex-grow">
+    <div class="col">Col1</div> <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div>
+    <div class="col ">Col5</div> <div class="col">Col6</div> <div class="col">Col7</div> <div class="col">Col8</div>
+  </div>
+  <div id="hover-effect" class="flex flex-grow">
+    <div class="col bg-clr">Col1</div> <div class="col bg-clr">Col2</div> <div class="col bg-clr">Col3</div> <div class="col bg-clr">Col4</div>
+    <div class="col bg-clr">Col5</div> <div class="col bg-clr">Col6</div> <div class="col bg-clr">Col7</div> <div class="col bg-clr">Col8</div>
+  </div>
+  
+  <h2>flex-shrink</h2>
+  <p>The flex-shrink CSS property sets the flex shrink factor of a flex item. If the size of all flex items is larger than the flex container, items shrink to fit according to flex-shrink.</p>
+  <p>In use, flex-shrink is used alongside the other flex properties flex-grow and flex-basis, and normally defined using the flex shorthand.</p>
+  <div class="flex flex-shrink">
+    <div class="col bg-clr">Col1</div> <div class="col bg-clr">Col2</div> <div class="col bg-clr">Col3</div> <div class="col bg-clr">Col4</div>
+    <div class="col bg-clr">Col5</div> <div class="col bg-clr">Col6</div> <div class="col bg-clr">Col7</div> <div class="col bg-clr">Col8</div>
+  </div>
+  <h2>justify-content</h2>
+  <p>justify-content: flex-start|flex-end|center|space-between|space-around|space-evenly|initial|inherit;  </p>
+  <table class="ws-table-all notranslate">
+    <tbody><tr>
+      <th style="width:22%">Value</th>
+      <th style="width:68%">Description</th>
+      <th style="width:10%">Play it</th>    
+    </tr>
+      <tr>
+      <td>flex-start</td>
+      <td>Default value. Items are positioned at the beginning of the container</td>
+    <td><a target="_blank" class="ws-btn btnsmall" href="playdemo.php?filename=playcss_justify-content&amp;preval=flex-start">Demo ❯</a></td>          
+      </tr>
+    <tr>
+      <td>flex-end</td>
+      <td>Items are positioned at the end of the container</td>
+    <td><a target="_blank" class="ws-btn btnsmall" href="playdemo.php?filename=playcss_justify-content&amp;preval=flex-end">Demo ❯</a></td>          
+      </tr>
+    <tr>
+      <td>center</td>
+      <td>Items are positioned in the center of the container</td>
+    <td><a target="_blank" class="ws-btn btnsmall" href="playdemo.php?filename=playcss_justify-content&amp;preval=center">Demo ❯</a></td>          
+      </tr>
+    <tr>
+      <td>space-between</td>
+      <td>Items will have space between them</td>
+    <td><a target="_blank" class="ws-btn btnsmall" href="playdemo.php?filename=playcss_justify-content&amp;preval=space-between">Demo ❯</a></td>          
+      </tr>
+    <tr>
+      <td>space-around</td>
+      <td>Items will have space before, between, and after them</td>
+    <td><a target="_blank" class="ws-btn btnsmall" href="playdemo.php?filename=playcss_justify-content&amp;preval=space-around">Demo ❯</a></td>          
+      </tr>
+    <tr>
+      <td>space-evenly</td>
+      <td>Items will have equal space around them</td>
+    <td><a target="_blank" class="ws-btn btnsmall" href="playdemo.php?filename=playcss_justify-content&amp;preval=space-evenly">Demo ❯</a></td>          
+      </tr>
+    <tr>
+      <td>initial</td>
+      <td>Sets this property to its default value. <a href="css_initial.php">Read about <em>initial</em></a></td>
+    <td></td>          
+      </tr>
+    <tr>
+      <td>inherit</td>
+      <td>Inherits this property from its parent element. <a href="css_inherit.php">Read about <em>inherit</em></a></td>
+    <td></td>
+      </tr>
+    </tbody></table>
+  <style>
+    .space-start .col:nth-child(even),.space-end .col:nth-child(even),.space-start .col:nth-child(even),.space-center .col:nth-child(even),.space-around .col:nth-child(even),.space-between .col:nth-child(even),.space-evenly .col:nth-child(even){ background-color: turquoise; }
+    .space-start .col:nth-child(odd),.space-end .col:nth-child(odd),.space-start .col:nth-child(odd),.space-center .col:nth-child(odd),.space-around .col:nth-child(odd),.space-between .col:nth-child(odd),.space-evenly .col:nth-child(odd){ background-color: rgb(202, 209, 3); }
+
+    .space-start{
+      height: 100px;
+      display: flex;
+      justify-content:flex-start ;
+    }
+    .space-end{ height: 100px; display: flex; justify-content:end ;}
+    .space-center{ height: 100px; display: flex; justify-content:center ;}
+    .space-around{ height: 100px; display: flex; justify-content:space-around ;}
+    .space-between{ height: 100px; display: flex; justify-content:space-between;}
+    .space-evenly{ height: 100px; display: flex; justify-content:space-evenly;}
+  </style>
+  <h3>justify-content start</h3>
+  <div class="space-start"> <div class="col">Col1</div>  <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div> </div>
+  <h3>justify-content End</h3>
+  <div class="space-end"> <div class="col">Col1</div>  <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div> </div>
+  <h3>justify-content center</h3>
+  <div class="space-center"> <div class="col">Col1</div>  <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div> </div>
+  <h3>justify-content around</h3>
+  <div class="space-around"> <div class="col">Col1</div>  <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div> </div>
+  <h3>justify-content between</h3>
+  <div class="space-between"> <div class="col">Col1</div>  <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div> </div>
+  <h3>justify-content evenly</h3>
+  <div class="space-evenly"> <div class="col">Col1</div>  <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div> </div>
+  <style>
+    .align-item-baseline{ display: flex; height: 100px; align-items: baseline;}
+    .align-item-center{ display: flex; height: 100px; align-items: center;}
+    .align-item-end{display: flex; height: 100px; align-items: end;}
+    .align-item-stretch{display: flex; height: 100px; align-items: stretch;}
+  </style>
+  <h3>align-items: flex-start</h3>
+  <div class="align-item-baseline"> <div class="col">Col1</div>  <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div> </div>
+  <h3>align-items: flex-center</h3>
+  <div class="align-item-center"> <div class="col">Col1</div>  <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div> </div>
+  <h3>align-items: flex-end</h3>
+  <div class="align-item-end"> <div class="col">Col1</div>  <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div> </div>
+  <h3>align-items: flex-stretch</h3>
+  <div class="align-item-stretch"> <div class="col">Col1</div>  <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div> </div>
+  <style>
+    .align-content-baseline{ display: flex; height: 100px; flex-wrap: wrap;  align-content: baseline; }
+    .align-content-center{ display: flex; height: 100px; flex-wrap: wrap;  align-content: center; }
+    .align-content-end{ display: flex; height: 100px; flex-wrap: wrap;  align-content: end; }
+    .align-content-flex-start{ display: flex; height: 100px; flex-wrap: wrap;  align-content: flex-start; }
+    .align-content-flex-end{ display: flex; height: 100px; flex-wrap: wrap;  align-content: flex-end; }
+  
+    .align-content-baseline .col,.align-content-center .col,.align-content-end .col,.align-content-flex-start .col,.align-content-flex-end .col{
+      height: 50px;
+    }
+  </style>
+  <h2>align-content-baseline</h2>
+  <div class="align-content-baseline"> <div class="col">Col1</div>  <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div> </div>
+  <h2>align-content-center</h2>
+  <div class="align-content-center"> <div class="col">Col1</div>  <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div> </div>
+  <h2>align-content-end</h2>
+  <div class="align-content-end"> <div class="col">Col1</div>  <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div> </div>
+  <h2>align-content-flex-start</h2>
+  <div class="align-content-flex-start"> <div class="col">Col1</div>  <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div> </div>
+  <h2>align-content-flex-end</h2>
+  <div class="align-content-flex-end"> <div class="col">Col1</div>  <div class="col">Col2</div> <div class="col">Col3</div> <div class="col">Col4</div> </div>
+</body>
+
+</html>

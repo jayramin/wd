@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.one {
+            outline-style: solid;
+            outline-color: red;
+        }
+
+        p.two {
+            outline-style: solid;
+            outline-color: green;
+        }
+
+        p.three {
+            outline-style: dotted;
+            outline-color: blue;
+        }
+
+        .sides {
+  outline-top-style: dotted;
+  outline-right-style: solid;
+  outline-bottom-style: dashed;
+  outline-left-style: solid;
+  padding: 20px;
+}
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><code>dotted</code> - Defines a dotted outline</li>
+        <li><code>dashed</code> - Defines a dashed outline</li>
+        <li><code>solid</code> - Defines a solid outline</li>
+        <li><code>double</code> - Defines a double outline</li>
+        <li><code>groove</code> - Defines a 3D grooved outline. The effect depends on the
+            outline-color value</li>
+        <li><code>ridge</code> - Defines a 3D ridged outline. The effect depends on the outline-color
+            value</li>
+        <li><code>inset</code> - Defines a 3D inset outline. The effect depends on the outline-color
+            value</li>
+        <li><code>outset</code> - Defines a 3D outset outline. The effect depends on the outline-color
+            value</li>
+        <li><code>none</code> - Defines no outline</li>
+        <li><code>hidden</code> - Defines a hidden outline</li>
+    </ul>
+    <div>
+        <p style="outline: dotted 10px;padding:2px 4px;">A dotted outline.</p>
+        <p style="outline: dashed 10px;padding:2px 4px;">A dashed outline.</p>
+        <p style="outline: solid 10px;padding:2px 4px;">A solid outline.</p>
+        <p style="outline: double 10px;padding:2px 4px;">A double outline.</p>
+        <p style="outline: groove 10px;padding:2px 4px;">A groove outline. The effect depends on the outline-color value.
+        </p>
+        <p style="outline: ridge 10px;padding:2px 4px;">A ridge outline. The effect depends on the outline-color value.</p>
+        <p style="outline: inset 10px;padding:2px 4px;">An inset outline. The effect depends on the outline-color value.
+        </p>
+        <p style="outline: outset 10px;padding:2px 4px;">An outset outline. The effect depends on the outline-color value.
+        </p>
+        <p style="outline: none 10px;padding:2px 4px;">No outline.</p>
+        <p style="outline: hidden 10px;padding:2px 4px;">A hidden outline.</p>
+        <p style="outline: dotted dashed solid double;padding:2px 4px;">A mixed outline.</p>
+    </div>
+
+    
+<p class="one">A solid red outline</p>
+<p class="two">A solid green outline</p>
+<p class="three">A dotted blue outline</p>
+<p class="sides">A dotted Sides</p>
+
+<h2>CSS outline - Shorthand Property </h2>
+<p>Like you saw in the previous page, there are many properties to consider when dealing with outlines.</p>
+<p>To shorten the code, it is also possible to specify all the individual outline properties in one property.</p>
+<p>The outline property is a shorthand property for the following individual outline properties: </p>
+<ul>
+    <li> outline-width</li>
+    <li> outline-style (required)</li>
+    <li> outline-color</li>
+</ul>
+
+</body>
+
+</html>

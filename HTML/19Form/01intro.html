@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Form Tag</h2>
+    <p>Form Tag will helps to send client data to the server</p>
+    <p>for sending data to the server form has 2 methods</p>
+    <p>name attribute will helps to send client data to server sepratly</p>
+    <ol>
+        <li>GET</li>
+        <li>POST</li>
+    </ol>
+    <h3>GET</h3>
+    <ol>
+        <li>Get is Default method of form</li>
+        <li>With the help of Get method we can send client data to the server using URL </li>
+        <li>Get method sends its data by URL thats why its less secure </li>
+        <li>Get method have limitations of 2048 bytes only</li>
+        <li>Get method dnt support file uploading</li>
+        <li>We can do bookmark of Get method data</li>
+        <li>Get merthod is faster than post</li>
+        <li>mainly we use get method for searching or sending one page data to other</li>
+    </ol>
+    
+    <!-- <form method="get"> -->
+        <!-- Defauolt get method -->
+    <form>
+        <input type="text" name="username" id="">
+        <input type="password" name="password" id="">
+        <input type="submit" name="save" id="">
+    </form>
+
+    <h3>POST</h3>
+    <ol>
+        <li>With the help of Get method we can send client data to the server without using URL </li>
+        <li>POST method sends its data without URL thats why its secure </li>
+        <li>POST method doenst have any limitation</li>
+        <li>POST method support file uploading</li>
+        <li>We can't bookmark of POST method data</li>
+        <li>POST is slower then get merthod</li>
+        <li>mainly we use POST for sending data to the server while we need security and large amount of data</li>
+    </ol>
+
+    <form action="page.php" autocomplete="off" method="post">
+        <input type="text"  name="username" id="">
+        <input type="password" name="password" id="">
+        <input type="submit" name="save" id="">
+    </form>
+    <form action="page.php" enctype="multipart/form-data" autocomplete="off" method="post">
+        <input type="file" name="" id="">
+    </form>
+    <h2>No validate</h2>
+    <form action="page.php" autocomplete="off" novalidate method="post">
+        <input type="text"  name="username" id="" required>
+        <input type="password" name="password" id="">
+        <input type="submit" name="save" id="">
+    </form>
+    <h3>Form Attributes</h3>
+    <table class="ws-table-all">
+        <tbody>
+            <tr>
+                <th>Attribute</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><a href="#">accept-charset</a></td>
+                <td>Specifies the character encodings used for form submission accept-charset="utf-8"</td>
+            </tr>
+            <tr>
+                <td><a href="#">action</a></td>
+                <td>Specifies where to send the form-data when a form is submitted</td>
+            </tr>
+            <tr>
+                <td><a href="#">autocomplete</a></td>
+                <td>Specifies whether a form should have autocomplete on or off</td>
+            </tr>
+            <tr>
+                <td><a href="#">enctype</a></td>
+                <td>Specifies how the form-data should be encoded when submitting it to the
+                    server (only for method="post")</td>
+            </tr>
+            <tr>
+                <td><a href="#">method</a></td>
+                <td>Specifies the HTTP method to use when sending form-data</td>
+            </tr>
+            <tr>
+                <td><a href="#">name</a></td>
+                <td>Specifies the name of the form</td>
+            </tr>
+            <tr>
+                <td><a href="#">novalidate</a></td>
+                <td>Specifies that the form should not be validated when submitted</td>
+            </tr>
+            <tr>
+                <td><a href="#">rel</a></td>
+                <td>Specifies the relationship between a linked resource and the current
+                    document</td>
+            </tr>
+            <tr>
+                <td><a href="#">target</a></td>
+                <td>Specifies where to display the response that is received after submitting
+                    the form</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Form Elements in HTML</h3>
+    <ul>
+        <li>HTML <code>&lt;input&gt;</code> tag</li>
+        <li>HTML <code>&lt;label&gt;</code> tag</li>
+        <li>HTML <code>&lt;button&gt;</code> tag</li>
+        <li>HTML <code>&lt;select&gt;</code>, <code>&lt;option&gt;</code> and <code>&lt;optgroup&gt;</code> tags</li>
+        <li>HTML <code>&lt;textarea&gt;</code> tag</li>
+        <li>HTML <code>&lt;fieldset&gt;</code> tag</li>
+        <li>HTML <code>&lt;legend&gt;</code> tag</li>
+        <li>HTML <code>&lt;datalist&gt;</code> tag</li>
+        <li>HTML <code>&lt;output&gt;</code> tag</li>
+    </ul>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Form</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><label for="username">User Name</label></td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>User Name</td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

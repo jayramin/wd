@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .float-r {
+            float: right;
+        }
+
+        .float-l {
+            float: left;
+        }
+
+        .clr {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div class="logo float-l">Logo</div>
+        <div class="menu float-r">menu</div>
+    </div>
+    <div class="clr"></div>
+    <p>
+
+        The float property is used for positioning and formatting content e.g. let an image float left to the text in a
+        container.
+    </p>
+
+    <p>The float property can have one of the following values:</p>
+    <ul>
+        <li>left - The element floats to the left of its container</li>
+        <li>right - The element floats to the right of its container</li>
+        <li>none - The element does not float (will be displayed just where it occurs in the text). This is default</li>
+        <li>inherit - The element inherits the float value of its parent</li>
+    </ul>
+
+    <p>When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property.</p>
+    <p> The clear property specifies what should happen with the element that is next to a floating element. </p>
+    <p> The clear property can have one of the following values: </p>
+
+    <ul>
+        <li> none - The element is not pushed below left or right floated elements. This is default</li>
+        <li> left - The element is pushed below left floated elements</li>
+        <li> right - The element is pushed below right floated elements</li>
+        <li> both - The element is pushed below both left and right floated elements</li>
+        <li> inherit - The element inherits the clear value from its parent</li>
+
+    </ul>
+</body>
+
+</html>

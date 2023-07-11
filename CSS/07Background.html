@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            height: 200px;    
+        } */
+        div[class*="bg"] {
+            height: 500px;
+            margin: 50px;
+            padding: 20px;
+            border: dashed 15px rgba(10, 162, 165, 0.817);
+            outline: dotted 15px rgba(157, 6, 6, 0.547);
+            color: white;
+            font-size: 36px;
+        }
+
+        .bg {
+            background-color: grey;
+        }
+
+        .bg-img {
+            background-image: url(images/backgrounf.jpg);
+        }
+
+        .bg-attac {
+            background-image: url(images/forfixed.jpg);
+            background-attachment: fixed;
+            /* background-attachment: scroll; */
+        }
+
+        .bg-clip {
+            background-image: url(images/forfixed.jpg);
+            background-clip: border-box;
+            background-clip: content-box;
+            background-clip: padding-box;
+            /* background-attachment: scroll; */
+        }
+
+        .bg-origin {
+            background-image: url(images/forfixed.jpg);
+            background-origin: border-box;
+            background-origin: content-box;
+            background-origin: padding-box;
+        }
+
+        .bg-position {
+            background-image: url(images/backgrounf.jpg);
+            background-repeat: no-repeat;
+            background-position: 40% 10%;
+        }
+        .bg-repeat {
+            background-image: url(images/backgrounf.jpg);
+            /* background-repeat: repeat-x; */
+            background-repeat: repeat-y;
+            /* background-repeat: no-repeat; */
+        }
+        .bg-size {
+            background-image: url(images/backgrounf.jpg);
+            /* background-repeat: repeat-x; */
+            background-repeat: repeat-y;
+            /* background-size: contain; */
+            background-size: cover;
+        }
+        .bg-sorthand {
+            background: url(images/backgrounf.jpg)no-repeat center center /cover;
+        }
+        .bg-gradi {
+            background:linear-gradient(40deg,orange,white,green);
+        }
+        .bg-gradi-radial {
+            background:radial-gradient(orange,white,green)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="disp">
+        <ul>
+            <li><a href="/en-US/docs/Web/CSS/background-color"><code>background-color</code></a></li>
+            <li><a href="/en-US/docs/Web/CSS/background-image"><code>background-image</code></a></li>
+            <li><a href="/en-US/docs/Web/CSS/background-attachment"><code>background-attachment</code></a></li>
+            <li><a href="/en-US/docs/Web/CSS/background-clip"><code>background-clip</code></a></li>
+            <li><a href="/en-US/docs/Web/CSS/background-origin"><code>background-origin</code></a></li>
+            <li><a href="/en-US/docs/Web/CSS/background-position"><code>background-position</code></a></li>
+            <li><a href="/en-US/docs/Web/CSS/background-repeat"><code>background-repeat</code></a></li>
+            <li><a href="/en-US/docs/Web/CSS/background-size"><code>background-size</code></a></li>
+        </ul>
+    </div>
+    <h2>bg-color</h2>
+    <div class="bg"></div>
+    <h2>bg-image</h2>
+    <div class="bg-img"></div>
+    <h2>bg-attachment</h2>
+    <div class="bg-attac"></div>
+    <h2>bg-clip</h2>
+    <div class="bg-clip">data</div>
+    <h2>bg-Origin</h2>
+    <div class="bg-origin">Origin</div>
+    <h2>bg-position</h2>
+    <div class="bg-position">position</div>
+    <h2>bg-repeat</h2>
+    <div class="bg-repeat">repeat</div>
+    <h2>bg-size</h2>
+    <div class="bg-size">size</div>
+    <h2>bg-sorthand</h2>
+    <div class="bg-sorthand">sorthand</div>
+    <h2>bg- linear gradient</h2>
+    <div class="bg-gradi">linear gradient</div>
+    <h2>bg- radial gradient</h2>
+    <div class="bg-gradi-radial">Radial gradient</div>
+</body>
+
+</html>

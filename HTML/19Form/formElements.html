@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        null,void or self closing tags like br, input, hr
+    </p>
+    
+<fieldset>
+    <legend>My form</legend>
+    <form action="serverpage.php" enctype="multipart/form-data" method="post">
+        <table width="50%" border="1" align="center">
+            <tr>
+                <td><label for="username">User Name</label></td>
+                <td><input type="text" name="username" value="Test" id="username"></td>
+            </tr>
+            <tr>
+                <td><label for="">Password</label></td>
+                <td><input type="password" placeholder="Enter Your Password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td><label for="">Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" value="Male" id="Male"> <label for="Male">Male</label>
+                    <input type="radio" name="gender" value="Female" id="Female"><label for="Female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Address</label></td>
+                <td>
+                    <textarea name="" id="" cols="50" rows="3"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Email</label></td>
+                <td>
+                    <input type="email" name="" value="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">mobile</label></td>
+                <td>
+                    <input type="tel" name="" value="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Age</label></td>
+                <td>
+                    <input type="number" name="" value="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Profile Pic</label></td>
+                <td>
+                    <input type="file" accept="image/*" name="" value="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Range</label></td>
+                <td>
+                    0
+                    <input type="range" name="" value="" id="">100
+                </td>
+            </tr>
+            <tr>
+                <td><label for="disk_c">Disk usage C:</label></td>
+                <td>
+                    <meter id="disk_c" value="6" low="3" high="8" min="0" max="10">2 out of 10</meter><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Hobbies</label></td>
+                <td>
+                    <input type="checkbox" name="chk[]"  id="Cricket" value="Cricket"> <label for="Cricket">Cricket</label> 
+                    <input type="checkbox" name="chk[]"  id="Music" value="Music"><label for="Music">Music</label>
+                    <input type="checkbox" name="chk[]"  id="Reading" value="Reading"><label for="Reading">Reading</label>
+                    <input type="checkbox" name="chk[]"  id="Travelling" value="Travelling"><label for="Travelling">Travelling</label>
+                    <input type="checkbox" name="chk[]"  id="Nothing" value="Nothing"><label for="Nothing">Nothing</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">City</label></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">--Select City--</option>
+                        <option value="Ahemedabad">Ahemedabad</option>
+                        <option value="Baroda">Baroda</option>
+                        <option value="Patan">Patan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Education</label></td>
+                <td>
+                    <select name="" id="" multiple>
+                        <option value="10th">10th</option>
+                        <option value="12th">12th</option>
+                        <option value="BCA">BCA</option>
+                        <option value="MscIT">MscIT</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Color</label></td>
+                <td>
+                    <input type="color" name="" value="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">DOB</label></td>
+                <td>
+                    <input type="date" name="" value="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Month</label></td>
+                <td>
+                    <input type="month" name="" value="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Week</label></td>
+                <td>
+                    <input type="week" name="" value="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">search</label></td>
+                <td>
+                    <input type="search" name="" value="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="url">url</label></td>
+                <td>
+                    <input type="url" name="url" value="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">data list</label></td>
+                <td>
+                    <input list="fruits" name="" value="" id="">
+                    <datalist id="fruits">
+                        <option value="Apple">
+                        <option value="Banana">
+                        <option value="Mango">
+                        <option value="xyz">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td><label for=""></label></td>
+                <td>
+                    <input type="button" name="" value="button" id="">
+                    <input type="submit" name="" value="submit" id="">
+                    <input type="reset" name="" value="cancel" id="">
+                </td>
+            </tr>
+        </table>
+    </form>
+</fieldset>
+</body>
+
+</html>

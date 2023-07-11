@@ -1,0 +1,45 @@
+
+
+////// Zoom meeting START///////////
+
+jay amin is inviting you to a scheduled Zoom meeting.
+
+Topic: 08May_MWF_9_30WD_FrontEnd
+Time: This is a recurring meeting Meet anytime
+
+Join Zoom Meeting
+https://us05web.zoom.us/j/89081859539?pwd=UStXN3V3RWRlTkh4czZqZVFGSDM2UT09
+
+Meeting ID: 890 8185 9539
+Passcode: tops
+
+
+////// Zoom meeting END///////////
+
+
+
+//////////// github START //////////////////
+
+step 1: create an account in github
+step 2: create a repo in github
+step 3: create clone of git repo in ur local machine using gitbash
+
+cmd : git clone https://github.com/jay-amin-tops/08May_MWF_9_30_WD.git
+
+step 4 : add ur code
+step 5 : push code git git using below commands 
+	git add .
+	git commit -m "yr msg" 
+	git push
+
+//////////// github END //////////////////
+
+
+
+
+
+
+
+//////////////////// Google Drive /////////////////////
+
+https://us05web.zoom.us/j/89081859539?pwd=UStXN3V3RWRlTkh4czZqZVFGSDM2UT09

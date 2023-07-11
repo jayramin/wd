@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::after {
+            content: " - Remember this";
+            background-color: yellow;
+            color: red;
+            font-weight: bold;
+        }
+
+        p::before {
+            content: "Read this: ";
+        }
+
+        p::first-letter {
+            font-size: 200%;
+            color: #8A2BE2;
+        }
+
+        p::first-line {
+            background-color: yellow;
+        }
+
+        p::selection {
+            color: red;
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="ws-table-all notranslate">
+        <tbody>
+            <tr>
+                <th style="width:20%">Selector</th>
+                <th style="width:20%">Example</th>
+                <th>Example description</th>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_after.asp">::after</a></td>
+                <td class="notranslate">p::after</td>
+                <td>Insert content after every &lt;p&gt; element <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Ab nulla corporis at deserunt atque adipisci, minima sequi quod praesentium ipsum vero
+                        eligendi nobis! Quia, possimus? Cupiditate consequatur praesentium laborum eos?</p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_before.asp">::before</a></td>
+                <td class="notranslate">p::before</td>
+                <td>Insert content before every &lt;p&gt; element</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_firstletter.asp">::first-letter</a></td>
+                <td class="notranslate">p::first-letter</td>
+                <td>Selects the first letter of every &lt;p&gt; element</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_firstline.asp">::first-line</a></td>
+                <td class="notranslate">p::first-line</td>
+                <td>Selects the first line of every &lt;p&gt; element</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_marker.asp">::marker</a></td>
+                <td class="notranslate">::marker</td>
+                <td>Selects the markers of list items</td>
+            </tr>
+            <tr>
+                <td><a href="/cssref/sel_selection.asp">::selection</a></td>
+                <td class="notranslate">p::selection</td>
+                <td>Selects the portion of an element that is selected by a user</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
